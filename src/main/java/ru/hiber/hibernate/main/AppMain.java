@@ -38,7 +38,7 @@ public class AppMain {
         session.getTransaction().commit();
 
         session.close();
-
+ыфв ыфв 
     }
 
 }
