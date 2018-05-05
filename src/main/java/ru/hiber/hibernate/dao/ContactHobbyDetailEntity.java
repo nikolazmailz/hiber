@@ -6,7 +6,7 @@ import javax.persistence.*;
  * Created by Ник on 10.06.2017.
  */
 @Entity
-@Table(name = "contact_hobby_detail", schema = "public", catalog = "pstg")
+@Table(name = "contact_hobby_detail", schema = "public", catalog = "postgres")
 @IdClass(ContactHobbyDetailEntityPK.class)
 public class ContactHobbyDetailEntity {
     private int contactId;

@@ -10,6 +10,34 @@ CREATE TABLE contact (
  UNIQUE (first_name, last_name)
 );
 
+CREATE SEQUENCE table_id_seq;
+
+ALTER TABLE contact 
+    ALTER COLUMN id 
+        SET DEFAULT NEXTVAL('table_id_seq');
+
+-- Table: public.contact
+
+-- DROP TABLE public.contact;
+
+CREATE TABLE public.contact
+(
+  id integer NOT NULL,
+  first_name character varying(60) NOT NULL,
+  last_name character varying(40) NOT NULL,
+  birth_date date,
+  version integer NOT NULL DEFAULT 0,
+  CONSTRAINT contact_pkey PRIMARY KEY (id),
+  CONSTRAINT contact_first_name_last_name_key UNIQUE (first_name, last_name)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.contact
+  OWNER TO postgres;
+
+
+
 CREATE TABLE hobby (
  hobby_id VARCHAR(20) PRIMARY KEY NOT NULL
 );

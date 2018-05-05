@@ -7,7 +7,7 @@ import java.util.Date;
  * Created by Ник on 10.06.2017.
  */
 @Entity
-@Table(name = "contact2", schema = "public", catalog = "pstg")
+@Table(name = "contact2", schema = "public", catalog = "postgres")
 public class Contact2Entity {
     private int id;
     private String firstName;

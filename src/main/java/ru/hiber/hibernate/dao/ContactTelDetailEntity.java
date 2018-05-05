@@ -6,7 +6,7 @@ import javax.persistence.*;
  * Created by Ник on 10.06.2017.
  */
 @Entity
-@Table(name = "contact_tel_detail", schema = "public", catalog = "pstg")
+@Table(name = "contact_tel_detail", schema = "public", catalog = "postgres")
 public class ContactTelDetailEntity {
     private int id;
     private String telType;
