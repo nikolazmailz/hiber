@@ -7,7 +7,7 @@ import java.util.Collection;
  * Created by Ник on 10.06.2017.
  */
 @Entity
-@Table(name = "hobby", schema = "public", catalog = "javastudy")
+@Table(name = "hobby", schema = "public", catalog = "pstg")
 public class HobbyEntity {
     private String hobbyId;
     private Collection<ContactHobbyDetailEntity> contactHobbyDetailsByHobbyId;

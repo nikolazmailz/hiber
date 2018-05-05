@@ -25,11 +25,11 @@ public class AppMain {
         System.out.println("Hibernate tutorial " + contactEntity.getId());
         System.out.println("Hibernate tutorial " + contactEntity2.getId());
 
-        contactEntity.setBirthDate((Date) new java.util.Date());
+        contactEntity.setBirthDate(new java.util.Date());
         contactEntity.setFirstName("one");
         contactEntity.setLastName("one");
 
-        contactEntity2.setBirthDate((Date) new java.util.Date());
+        contactEntity2.setBirthDate(new java.util.Date());
         contactEntity2.setFirstName("two");
         contactEntity2.setLastName("two");
 
@@ -38,7 +38,7 @@ public class AppMain {
         session.getTransaction().commit();
 
         session.close();
-ыфв ыфв 
+
     }
 
 }
